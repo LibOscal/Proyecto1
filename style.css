@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: white;
+}
+.menu{
+  width: 100vw;
+  height: 12vh;
+  display: grid;
+  grid-template-columns: 4;
+  grid-template-rows: 1;
+  background: blue;
+}
+.inicio{
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.casa{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.articulop{
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.collar{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.peluditos{
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  background: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pg{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.isecion{
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  background: white;
+  border-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
