@@ -6,7 +6,7 @@ body {
 }
 .menu{
   width: 100vw;
-  height: 12vh;
+  height: 10vh;
   display: grid;
   grid-template-columns: 4;
   grid-template-rows: 1;
@@ -21,6 +21,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 
 }
 .casa{
@@ -37,6 +38,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 .collar{
   width: 25px;
@@ -52,6 +54,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 .pg{
   width: 25px;
@@ -64,8 +67,111 @@ body {
   grid-column-start: 4;
   grid-column-end: 5;
   background: white;
-  border-right: 5px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
+.centro{
+  width: 100vw;
+  height: 150vh;
+  display: grid;
+  grid-template-columns: 4;
+  grid-template-rows: 6;
+  background: blue;
+}
+.centroarriba{
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.art1{
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background: green;
+}
+.art2{
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background: pink;
+}
+.carrete{
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  background: purple;
+}
+.centroabajo{
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+.formulario{
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background: green;
+}
+.porque{
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  background: red;
+  }
+  .como{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    background: red;
+    }
+.contacto{
+  grid-row-start: 7;
+  grid-row-end: 8;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+.siguenos{
+  grid-row-start: 7;
+  grid-row-end: 8;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background: red;
+}
+.insta{
+  grid-row-start: 7;
+  grid-row-end: 8;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background: red;
+}
+.fb{
+  grid-row-start: 7;
+  grid-row-end: 8;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  background: red;
+}
+
