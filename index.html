@@ -9,10 +9,19 @@
   </head>
   <body>
     <header class="menu">
-        <div class="inicio">Inicio <br> <img class="casa" src="https://image.flaticon.com/icons/png/512/35/35145.png" alt="casita de perros y gatos"></div>
-        <div class="articulop">Articulos <br> <img class="collar"src="https://image.flaticon.com/icons/png/512/91/91523.png" alt="Collar de perro o gato"> </div>
-        <div class="peluditos">Nuestros<br>Peluditos <br> <img class="pg" src="https://w7.pngwing.com/pngs/499/839/png-transparent-cat-silhouette-sticker-dog-beige-color.png" alt="Un Perro y Un Gato"></div>
-        <div class="isecion">Iniciar Seción</div>
+        <div class="inicio">
+          <button class="iniciobtn">Inicio</button></div>
+
+        <div class="articulop">
+          <button class="articulobtn">Articulos </button></div>
+
+        <div class="peluditos">
+          <button class="peluditobtn">Nuestros Peluditos</button> </div>
+
+        <div class="isesion">
+        <button class="isbtn">Iniciar Sesión</button>
+        <button class="crear">Crear Cuenta</button> </div>
+
     </header>
     <main class="centro">
       <aside class="centroarriba">
@@ -23,7 +32,23 @@
         <div class="carrete">Carrete de fotos</div>
         </aside>
         <aside class="centroabajo">
-        <div class="formulario">Formulario  </div>
+        <form class="formulario" action="index.html" method="post">
+            <label for="fnombre">Nombre</label> <br>
+            <input type="text" id="fnombre" name="fnombre" placeholder="Luna"> <br>
+            <label for="fapellido">Apellido</label> <br>
+            <input type="text" id="fapellido" name="fapellido" placeholder="Asturias"> <br>
+            <label for="fcorreo">Correo Electronico</label>
+            <input type="email" name="fcorreo" placeholder="ejemplo@gmail.com"> <br>
+            <label for="adopcionpg">A quien quieres adoptar</label>
+            <select name="adopcionpg">
+              <option value="" disabled selected>Selecciona una opción</option>
+              <option value="fperro">Perro</option>
+              <option value="fgato">Gato</option>
+              <option value="fambos">Perro & Gato</option><br>
+            </select>
+            <br>
+            <button type="submit">Listo Para Adoptar</button><br>
+        </form>
         <div class="porque">Porque adoptar
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor </p></div>
         <div class="como">Como adoptar
