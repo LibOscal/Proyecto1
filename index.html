@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=divice-width, initial-scale=1.5">
-    <meta http-equiv="X-AU-Compatible" content="ie=edge">
+    <meta http-equiv="X-AU-Compatible" content="IE=edge">
     <title>Adopcion de perros y gatos</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+
+    <!-- ---------------------------------------------------------->
+
     <header class="menu">
         <div class="inicio">
           <button class="iniciobtn">Inicio</button></div>
@@ -23,23 +26,44 @@
         <button class="crear">Crear Cuenta</button> </div>
 
     </header>
+
+    <!-- ------------------------------------------------------------>
+
     <main class="centro">
+
+<!-- +++++++++++++++++++++++ -->
       <aside class="centroarriba">
-        <div class="art1">La vida de los olvidados
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
-        <div class="art2">Cuanto sufren
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor </p></div>
-        <div class="carrete">Carrete de fotos</div>
+        <article class="art1">
+        <h1> Los Olvidados</h1> <br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <br>
+        <button class="infobtn">Más <br> Información</button>
+      </article>
+
+        <article class="art2">
+          <h1>Cuanto Sufren</h1> <br>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <br>
+          <button class="infobtn">Más <br> Información</button>
+        </article>
+
+        <div class="carrete"> <img class="centroa"src="https://miblogdeperrosygatos.files.wordpress.com/2015/10/20150929_195122.jpg" alt="imagen de un centro de adopción">
+        <button class="menosbtn"> < </button>
+        <button class="masbtn"> > </button>
+        </div>
         </aside>
+
+    <!-- +++++++++++++++++++++++++ -->
+
         <aside class="centroabajo">
         <form class="formulario" action="index.html" method="post">
             <label for="fnombre">Nombre</label> <br>
             <input type="text" id="fnombre" name="fnombre" placeholder="Luna"> <br>
             <label for="fapellido">Apellido</label> <br>
             <input type="text" id="fapellido" name="fapellido" placeholder="Asturias"> <br>
-            <label for="fcorreo">Correo Electronico</label>
+            <label for="fcorreo">Correo Electronico</label><br>
             <input type="email" name="fcorreo" placeholder="ejemplo@gmail.com"> <br>
-            <label for="adopcionpg">A quien quieres adoptar</label>
+            <label for="adopcionpg">A quien quieres adoptar</label><br>
             <select name="adopcionpg">
               <option value="" disabled selected>Selecciona una opción</option>
               <option value="fperro">Perro</option>
@@ -47,19 +71,38 @@
               <option value="fambos">Perro & Gato</option><br>
             </select>
             <br>
-            <button type="submit">Listo Para Adoptar</button><br>
+            <button class="submit">Listo Para <br> Adoptar</button><br>
         </form>
-        <div class="porque">Porque adoptar
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor </p></div>
-        <div class="como">Como adoptar
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> </div>
 
+        <article class="porque">
+          ¿Por qué Adoptar?
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <button class="infobtn">Más <br> Información</button>
+        </article>
+
+        <article class="como">
+          ¿Cómo Adoptar?
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <button class="infobtn">Más <br> Información <br>
+           </button>
+        </article>
+<!-- ----------------------------------------------------->
       </aside>
       <aside class="contacto">
         <div class="siguenos">Siguenos</div>
-        <div class="insta">Instagram</div>
-        <div class="fb">Facebook</div>
+
+        <div class="insta">Instagram <br>
+        <button class="instabtn">
+          <a href="https://www.instagram.com/">  <img  class="iinsta" src="https://img.icons8.com/fluent/48/000000/instagram-new.png" alt="icono de instagram"/></a>
+        </button></div>
+
+        <div class="fb">
+          <button class="facebtn">Facebook <br>
+            <a href="https://www.facebook.com/">  <img  class="iface" src="https://img.icons8.com/color/48/000000/facebook.png" alt="icono de facebook"></a>
+          </button></div>
+        </div>
       </aside>
     </main>
   </body>
 </html>
+
