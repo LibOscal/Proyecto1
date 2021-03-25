@@ -1,23 +1,23 @@
-/* paleta de colores pastel
-  rosado #ff9aa2
-  naranja #ffdac1
-  verde-cian #b5ead7
-  morado #daa2f6
-  azul #bbc7f7
- */
 body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
     background-image: url(https://i.pinimg.com/originals/c4/7c/fe/c47cfe0e2434240e3b6aa3e3586ed152.png);
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 4;
+    grid-template-rows: 50px 150px 160px 50px ;
+    grid-gap: 20px;
 }
+/* ------------------------ */
 .menu{
-  width: 100vw;
-  height: 10vh;
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 1;
+  grid-column-start: 1;
+  grid-column-end: 5;
   background: #daa2f6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 .inicio{
   display: flex;
@@ -25,10 +25,6 @@ body {
   justify-content: center;
 }
 .iniciobtn{
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 1;
-  grid-column-end: 2;
   background-color: #daa2f6;
   color: white;
   border: none;
@@ -43,10 +39,6 @@ body {
   justify-content: center;
 }
 .articulobtn{
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 2;
-  grid-column-end: 3;
   background-color: #daa2f6;
   color: white;
   border: none;
@@ -62,14 +54,10 @@ body {
   flex-direction: row;
 }
 .peluditobtn{
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 3;
-  grid-column-end: 4;
   background-color: #daa2f6;
   color: white;
   border: none;
-  cursor: pointer ;
+  cursor: pointer;
 }
 .peluditobtn:hover{
   background-color: #ff9aa2;
@@ -81,134 +69,160 @@ body {
 
 }
 .isbtn{
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 4;
-  grid-column-end: 5;
   background-color: #daa2f6;
   color: white;
   border: none;
-  cursor: pointer ;
+  cursor: pointer;
   }
   .isbtn:hover{
   background-color: #ff9aa2;
   }
 
 .crear{
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 4;
-  grid-column-end: 5;
   background-color: #daa2f6;
   color: white;
   border: none;
-  cursor: pointer ;
+  cursor: pointer;
   }
   .crear:hover{
   background-color: #ff9aa2;
   }
+
+
+/* ------------------------ */
 .centro{
-  width: 100vw;
-  height: 150vh;
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 6;
-  /* background: blue; */
+  grid-column-start: 1;
+  grid-column-end: 5;
 }
+
+/* +++++++++++++++ */
 .centroarriba{
   grid-row-start: 2;
   grid-row-end: 3;
-  grid-column-start: 1;
-  grid-column-end: 5;
-  /* background: white; */
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  flex-direction: row;
 }
 .art1{
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  border-style: outset;
-  border-width: 10px;
-  background-image: url(https://thumbs.dreamstime.com/b/el-color-en-colores-pastel-agita-fondo-para-powerpoint-124019697.jpg);
+background: #bbc7f7;
+border-radius: 20px;
+text-align: center;
+padding: 1rem;
+margin: 10px;
 }
 .art2{
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  /* background: pink; */
+  background: #bbc7f7;
+  border-radius: 20px;
+  text-align: center;
+  padding: 1rem;
+  margin: 10px;
 }
 .carrete{
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 3;
-  grid-column-end: 5;
-  /* background: purple; */
+  background: #bbc7f7;
+  border-radius: 20px;
+  text-align: center;
+  padding: 1rem;
+  margin: 10px;
 }
+.centroa{
+  height: 20vh;
+  width: 20vw;
+}
+.menosbtn{
+    background: #b5ead7;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+  .menosbtn:hover{
+    background-color: #ffdac1;
+}
+.masbtn{
+    background: #b5ead7;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+  .masbtn:hover{
+    background-color: #ffdac1;
+}
+/* ++++++++++++++*/
 .centroabajo{
-  grid-row-start: 4;
-  grid-row-end: 5;
-  grid-column-start: 1;
-  grid-column-end: 5;
-  /* background: white; */
+  grid-row-start: 3;
+  grid-row-end: 4;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
   flex-direction: row;
-}
-.formulario{
-  grid-row-start: 4;
-  grid-row-end: 5;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  /* background: green; */
+  justify-content: space-around;
 }
 .porque{
-  grid-row-start: 4;
-  grid-row-end: 5;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  background-image: url(https://thumbs.dreamstime.com/b/el-color-en-colores-pastel-agita-fondo-para-powerpoint-124019722.jpg);
-  }
-  .como{
-    grid-row-start: 4;
-    grid-row-end: 5;
-    grid-column-start: 4;
-    grid-column-end: 5;
-    /* background: red; */
-    }
+  background: #bbc7f7;
+  border-radius: 20px;
+  text-align: center;
+  padding: 1rem;
+  margin: 10px;
+}
+.infobtn{
+  background-color: #b5ead7;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.infobtn:hover{
+  background-color: #ffdac1;
+}
+.como{
+  background: #bbc7f7;
+  border-radius: 20px;
+  text-align: center;
+  padding: 1rem;
+  margin: 10px;
+}
+.infobtn{
+  background-color: #b5ead7;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.infobtn:hover{
+  background-color: #ffdac1;
+}
+.formulario{
+  background: #ffdac1;
+  padding: 1rem;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+/* ++++++++++++ */
 .contacto{
-  grid-row-start: 7;
-  grid-row-end: 8;
   grid-column-start: 1;
   grid-column-end: 5;
-  /* background: white; */
+  background: #daa2f6;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  justify-content: space-around;
   flex-direction: row;
 }
-.siguenos{
-  grid-row-start: 7;
-  grid-row-end: 8;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  /* background: red; */
+.instabtn{
+  background: #daa2f6;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
-.insta{
-  grid-row-start: 7;
-  grid-row-end: 8;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  /* background: red; */
+.infobtn:hover{
+  background-color: #ffdac1;
 }
-.fb{
-  grid-row-start: 7;
-  grid-row-end: 8;
-  grid-column-start: 4;
-  grid-column-end: 5;
-  /* background: red; */
+.facebtn{
+  background: #daa2f6;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
+.facebtn:hover{
+  background-color: #ffdac1;
+}
+/* paleta de colores pastel
+  rosado #ff9aa2
+  naranja #ffdac1
+  verde-cian #b5ead7
+  morado #daa2f6
+  azul #bbc7f7
+ */
